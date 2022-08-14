@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.leftnav{
+    position: fixed;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.logo h1{
+    color: rgb(250, 246, 20);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.jump a{
+    display: block;
+    /* margin: auto; */
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    color: blueviolet;
+    padding-top: 5px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: azure;
+}
+
+.jump a:hover{
+    background-color: aqua;
+    font-weight: bold;
+}
+
+.ad{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.ad a{
+    color: gray;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(to bottom left,red, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.adminlogin{
+    display: flex;    
+    justify-content: right;
+}
+
+.adminlogin a{
+    border: 2px solid salmon;
+    color: rebeccapurple;  
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.adminlogin a:hover{
+    background-color: yellow;
+    font-weight: bolder;
+}
+
+.contentmain{
+    padding-left: 20%;
+    height: 250vh;
+}
+
+.notes h2{
+    color: black;
+    text-align: center;
+}
+
+.notes div a{
+    color: rgb(252, 63, 56);
+    padding-left: 10%;
+}
+
+.notes{
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(48, 241, 241);
+}
+
+@media screen and (min-width:600px) {
+    #smalllog{
+        display: none;
+    }
+    
+    #list{
+        display: none;
+    }
+
+    .jump{
+        display: block;
+    }
+
+    .leftnav{
+        border-right: 1px dotted violet;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .leftnav{
+        position: relative;
+        height: 45px;
+        padding: 2%;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #list{
+        border: 1px solid slateblue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contentmain{
+        padding-left:0 ;
+        margin-top: 10px;
+    }
+
+    .jump{
+        display: none;
+    }
+
+    .ad{
+        display: none;
+    }
+
+    #biglog{
+        display: none;
+    }
+}
